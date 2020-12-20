@@ -75,7 +75,7 @@ app.post("/getone", function (req, res) {
 
 app.post("/putdata", function (req, res) {
   
-  const data = req.body;
+  const data = req.body.data;
 
     sensor.create(data);
     res.send("sent");
